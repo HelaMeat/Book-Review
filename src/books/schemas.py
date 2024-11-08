@@ -14,7 +14,6 @@ class BookCreateModel(BaseModel):
     author: str
     publication_year: int
     
-    
 class BookUpdateModel(BaseModel):
     title: str 
     author: str 
