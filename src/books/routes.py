@@ -18,16 +18,9 @@ async def create_book(book_data:BookCreateModel):
             'author' : book_data.author , 
             'publication_year' : book_data.publication_year}    
     
-@app.get('/books', response_model=List[BookCreateModel])
-async def get_books(book_data:BookCreateModel) -> BookCreateModel:
-    return book_data
 
 @app.get('/get_header')
 async def getHead(accept:str = Header(None)):
     request_headers = {}
-    
     request_headers['Accept'] = accept
-    
     return request_headers
-    
-    
