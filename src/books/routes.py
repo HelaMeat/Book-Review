@@ -6,7 +6,7 @@ from src.books.schemas import BookCreateModel, Book, BookUpdateModel
 book_router = APIRouter()
 
 @book_router.get('/', response_model=List[Book])
-async def get_all_books():
+async def get_all_books() -> List[Book]:
     return books
 
 
