@@ -12,7 +12,7 @@ async def life_span(app:FastAPI):
     print(f"server stopped")
 
 version = 'v1'
-
+ 
 app = FastAPI(
     lifespan=life_span,
     version = version
