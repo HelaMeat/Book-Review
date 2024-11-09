@@ -13,4 +13,4 @@ engine = AsyncEngine(
 async def init_db():
     async with engine.begin() as conn:
         
-        await conn.execute(text("CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY, title TEXT, author TEXT, publisher TEXT, publication_year INTEGER, page_count INTEGER, language TEXT)"))
+        await conn.execute(text("CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY, title TEXT, author TEXT, publisher TEXT, publication_year INTEGER, page_count INTEGER, language TEXT)"))  
